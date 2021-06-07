@@ -13,9 +13,13 @@ public class App {
     public static void main(String[] args) {
         App myApp = new App();
 
+        // Input
         int monthNum = myApp.readMonth();
+
+        // Number to Name translation
         String month = myApp.monthName(monthNum);
 
+        // Output
         String output = myApp.generateOutput(month);
         myApp.outputString(output);
     }
